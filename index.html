@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jyothi Adhikari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jyothi Adhikari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./static/jyothi.png" alt="Jyothi profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jyothi Adhikari</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./static/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='https://mail.google.com/mail/u/0/#inbox'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./static/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/adhikari-ratna-jyothi-a08b26249'"
+          />
+          <img
+            src="./static/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dashboard'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./static/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./static/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>skills</h3>
+              <p>•Areas: Basics of Machine learning, Basics of Artificial Intelligence, R-DBMS</p>
+        <p>•Web: HTML, CSS, Bootstrap, JavaScript, Flask, MySQL</p>
+              <p>•Programming: Java(Intermediate), C and Python(Basic)</p>
+              <p>•Libraries: Numpy, Pandas, Matplotlib, Seaborn, Sklearn, Flask</p>
+              <p>•Tools: VS Code, Google Colab, Jupyter Notebook</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./static/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <P> Secondary School Certificate at SSRZPP High school,Bheemanapalli
+              <p>Pre University course at Rgukt IIIT,Nuzvid
+              </P>
+              <P>B.tech at Rgukt IIIT,Nuzvid</p>
+            </div>
+          </div>
+          <div class="text-container">
+           <h1>MYSELF</h1> 
+            <p>
+              My name is Adhikari Ratna Jyothi. I'm 21 years old. I basically belong to vilasavilli. Coming to my family, we are four members in my family including me,we are 2 sibilings, me and my sister. Coming to my education
+              Coming to my skill, I have knowledge of programming languages like Java, python, HTML,CSS and javascript. My short term goal is to get a job in reputed company like yours. While my long term goal is to acheive a good position in same company.
+              Coming to my hobbies, my hobbies are listening to music, sending time with my family in my free time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./static/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">MY SKILLS ARE:</h2>
+            <div class="container">
+                <P>•Areas: Basics of Machine learning, Basics of Artificial Intelligence, R-DBMS</P>
+                <P>•Web: HTML, CSS, Bootstrap, JavaScript, Flask, MySQL</P>
+                <P>•Programming: Java(Intermediate), C and Python(Basic)</P>
+                 <P>•Libraries: Numpy, Pandas, Matplotlib, Seaborn, Sklearn, Flask</P>
+                  <P>•Tools: VS Code, Google Colab, Jupyter Notebook.</p>
+                
+      <img
+        src="./static/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./static/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Toursim Website using html,css and JavaScript
+            </h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./static/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Build an Alarm Clock Using Python</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./static/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Multi Disease Prediction Using Ml</h2>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./st\/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./static/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">jyothiadhikari7671@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./static/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Jyothi. All Rights Reserved by jyothi.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
